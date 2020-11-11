@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Wolf Pack Spring application</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<form action="/add" method="POST">
+    <p>Let's add a wolf.</p>
+
+    <div>
+        <label for="firstName">First name:</label>
+        <input name="first" id="firstName" value="Homer">
+    </div>
+    <div>
+        <label for="lastName">Last name:</label>
+        <input name="last" id="lastName" value="Simpson">
+    </div>
+    <div>
+        <label for="gender">Gender:</label>
+        <input name="gender" id="gender" value="male">
+    </div>
+    <div>
+        <button>Add wolf</button>
+    </div>
+</form>
+
+<form action="/delete" method="POST">
+    <p>Let's delete a wolf.</p>
+    <div>
+        <label for="id">id:</label>
+        <input name="id" id="id" value="1">
+    </div>
+    <div>
+        <button>delete</button>
+    </div>
+</form>
+
+
+
+<form action="/list" method="GET">
+    <button>List wolfs</button>
+</form>
+
+<form action="/findWolfById" method="GET">
+    <label for="id">WolfById:</label>
+    <input name="wolfId" id="wolfById" value="1">
+    <button>find wolf by Id</button>
+</form>
+
+<form action="/addPack" method="POST">
+    <p>Let's add a wolf.</p>
+
+    <div>
+        <label for="groupId">Group id:</label>
+        <input name="groupId" id="packId" value="1">
+    </div>
+    <div>
+        <button>Add Pack id</button>
+    </div>
+</form>
+
+<form action="/listPack" method="GET">
+    <button>List Packs</button>
+</form>
+
+<form action="/group" method="POST">
+    <p>Let's group a wolf.</p>
+    <div>
+        <label for="id">wolfId:</label>
+        <input name="wolfId" id="wolfId" value="1">
+    </div>
+    <div>
+        <label for="id">groupId:</label>
+        <input name="groupId" id="groupId" value="1">
+    </div>
+    <div>
+        <button>group</button>
+    </div>
+</form>
+
+
+
+<form action="/listGroupById" method="GET">
+    <label for="id">groupById:</label>
+    <input name="WolfPackId" id="WolfPackId" value="1">
+    <button>Groups by Id</button>
+</form>
+
+</body>
+</html>
